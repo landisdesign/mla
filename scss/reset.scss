@@ -1,0 +1,96 @@
+head,
+title,
+base,
+link,
+meta,
+style {
+	display: none;
+}
+
+html,
+body,
+div,
+main,
+section,
+article,
+nav,
+aside,
+header,
+hgroup,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+pre,
+ul,
+ol,
+dl,
+li,
+dl,
+dt,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th,
+figure,
+figcaption {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 100%;
+	line-height: 1;
+}
+
+ul,
+ol,
+dl,
+li,
+dt,
+dd {
+	list-style-type: none;
+}
+
+span,
+a,
+b,
+i,
+u,
+s,
+cite,
+q,
+dfn,
+data,
+time,
+abbr,
+em,
+tt,
+code,
+samp,
+kbd,
+var,
+ins,
+del,
+small,
+strong,
+bdi,
+bdo {
+	display: inline;
+	font-size: 1em;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
