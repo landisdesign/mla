@@ -1,0 +1,23 @@
+/* Media sizes */
+
+$em-size: 16;
+$small-bp: 480rem / $em-size;
+$large-bp: 768rem / $em-size;
+$max-bp: 960rem / $em-size;
+
+$phone: "(min-width:0) and (max-width:" + $small-bp + ")";
+$tablet: "(min-width:" + ($small-bp + 0.01) + ") and (max-width: " + $large-bp + ")";
+$desktop: "(min-width:" + ($large-bp + 0.01) + ")";
+$not-phone: "(min-width:" + ($small-bp + 0.01) + ")";
+$not-desktop: "(max-width:" + $large-bp + ")";
+
+/* Colors */
+
+$color-canvas: #FFF;
+$color-text: #333;
+$color-accent: #9CF;
+$color-accent-dark: #21769B;
+$color-accent-light: #DDD;
+$color-hover: #D54E21;
+$color-background: #DEF;
+$color-background-light: #EAF2FA;

@@ -1,0 +1,51 @@
+nav.articles {
+
+	@media #{$desktop} {
+		h1 {
+			margin: 2rem 0 1rem;
+		}
+	}
+
+	ul {
+		border-top: 1px solid $color-accent-light;
+	}
+
+	ul a {
+		display: block;
+		padding: .3rem .5rem .3rem 10px;
+		border-bottom: 1px solid $color-accent-light;
+		background: url(../images/arrow.png) no-repeat 0 50%;
+		font-size: 1rem;
+
+		&:hover {
+			background-color: $color-background-light;
+		}
+	}
+
+	@media #{$not-desktop} {
+
+		display: grid;
+		grid: auto/50% 50%;
+
+		h1 {
+			padding: .5em;
+			background-color: $color-accent-light;
+			text-align: center;
+
+			&:first-child {
+				border-right: 1px solid $color-canvas;
+			}
+		}
+
+		ul, div {
+			position: absolute;
+			top: 2em;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			overflow: auto;
+			background-color: $color-canvas;
+		}
+
+	}
+}

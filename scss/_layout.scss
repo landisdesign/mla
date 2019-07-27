@@ -1,0 +1,65 @@
+html {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	@media #{$desktop} {
+		grid:	"h h"
+				"m n" 1fr
+				"f f"
+				/ 1fr 250em / $em-size;
+		width: 95%;
+		max-width: $max-bp;
+		margin: 0 auto;
+	}
+	@media #{$not-desktop} {
+		grid:	"h"
+				"m"
+				"f";
+	}
+	min-height: 100%;
+}
+
+header {
+	grid-area: h;
+}
+
+main {
+	grid-area: m;
+}
+
+nav.articles {
+	@media #{$desktop} {
+		grid-area: n;
+	}
+
+	@media #{$not-desktop} {
+		position: fixed;
+		z-index: 1;
+		left: 100%;
+		bottom: 0;
+		width: 100%;
+		background-color: $color-canvas;
+		transition-property: left;
+		transition-duration: 0.3s;
+	}
+
+	@media #{$phone} {
+		top: 2.5rem;
+	}
+
+	@media #{$tablet} {
+		top: 4rem;
+	}
+}
+
+@media #{$not-desktop} {
+	.open nav.articles {
+		left: 0;
+	}
+}
+
+footer {
+	grid-area: f;
+}

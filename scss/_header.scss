@@ -1,0 +1,105 @@
+header {
+	display: grid;
+	grid: auto/auto 1fr;
+	column-gap: .5rem;
+	align-items: end;
+	border-bottom: 1px solid $color-accent;
+	@media #{$not-desktop} {
+		padding: .5rem;
+	}
+	@media #{$desktop} {
+		padding: .5rem 0;
+	}
+
+	a {
+		display: block;
+	}
+
+	img {
+		display: block;
+		@media #{$phone} {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+		@media #{$tablet} {
+			width: 3rem;
+			height: 3rem;
+		}
+		@media #{$desktop} {
+			width: 6rem;
+			height: 6rem;
+		}
+	}
+
+	h1 {
+		@media #{$phone} {
+			font-size: 1.5rem;
+		}
+		@media #{$tablet} {
+			font-size: 2rem;
+		}
+		@media #{$desktop} {
+			font-size: 4rem;
+		}
+	}
+
+	h2 {
+		@media #{$phone} {
+			display: none;
+		}
+		@media #{$tablet} {
+			font-size: 1rem;
+		}
+		@media #{$desktop} {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+.toggle {
+	display: none;
+}
+
+.open .fixed .toggle svg {
+	transform: rotate(90deg);
+}
+
+.fixed {
+	@media #{$not-desktop} {
+		display: block;
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: $color-canvas;
+	}
+
+	@media #{$desktop} {
+		display: none;
+	}
+
+	.toggle {
+	 	display: block;
+		position: absolute;
+		top: .5rem;
+		right: .5rem;
+		cursor: pointer;
+
+		svg {
+			transition-property: transform;
+			transition-duration: .3s;
+			display: block;
+			width: 3rem;
+			height: 3rem;
+			stroke-width: 0;
+			stroke: $color-accent-dark;
+			fill: $color-accent-dark;
+
+			@media #{$phone} {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+		}
+	}
+}

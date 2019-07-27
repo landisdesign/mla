@@ -61,38 +61,4 @@ dd {
   list-style-type: none;
 }
 
-span,
-a,
-b,
-i,
-u,
-s,
-cite,
-q,
-dfn,
-data,
-time,
-abbr,
-em,
-tt,
-code,
-samp,
-kbd,
-var,
-ins,
-del,
-small,
-strong,
-bdi,
-bdo {
-  display: inline;
-  font-size: 1em;
-  font-weight: normal;
-  font-variant: normal;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
 /*# sourceMappingURL=reset.css.map */

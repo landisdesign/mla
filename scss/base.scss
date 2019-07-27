@@ -1,4 +1,37 @@
+@import '_values';
+@import '_layout';
+@import '_header';
+@import '_main';
+@import '_nav';
+@import '_footer';
+
 html {
-	background-color: #FFF;
-	color: #333;
+	background-color: $color-canvas;
+	color: $color-text;
+	font-family: GaramondFBText, "Adobe Garamond", "AGaramond", Garamond, "Crimson Text", "Times New Roman", Times, serif;
+}
+
+body {
+	@media #{$phone} {
+		font-size: 1rem;
+	}
+
+	@media #{$not-phone} {
+		font-size: 1.25rem;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
+a:link, a:visited {
+	color: $color-accent-dark;
+	text-decoration: none;
+
+	&:hover, &:active {
+		color: $color-hover;
+		text-decoration: underline;
+	}
 }
